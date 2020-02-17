@@ -4,7 +4,7 @@
 ```
 docker pull mysql
 mkdir -p $HOME/docker/volumes/mysql
-docker run --rm --name db-mysql -e MYSQL_ROOT_PASSWORD=docker -d -p 3306:3306 -v $HOME/docker/volumes/mysql:/var/lib/mysql mysql
+docker run --name db-mysql -e MYSQL_ROOT_PASSWORD=docker -d -p 3306:3306 -v $HOME/docker/volumes/mysql:/var/lib/mysql mysql mysqld --default-authentication-plugin=mysql_native_password
 ```
 
 ## Access

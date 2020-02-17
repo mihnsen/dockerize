@@ -5,7 +5,7 @@ Follow the cross-platform-development
 ```
 docker pull mongo
 mkdir -p $HOME/docker/volumes/mongo
-docker run --rm --name db-mongo -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=docker -d -p 27017:27017 -v $HOME/docker/volumes/mongo:/data/db mongo
+docker run --name db-mongo -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=docker -d -p 27017:27017 -v $HOME/docker/volumes/mongo:/data/db mongo
 ```
 
 
